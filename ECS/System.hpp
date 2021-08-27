@@ -1,0 +1,22 @@
+///////////////////////////////////////////////////////////////////////////////
+// System.hpp
+///////////////////////////////////////////////////////////////////////////////
+
+#pragma once
+#ifndef SYSTEM_HPP
+#define SYSTEM_HPP
+
+#include "Entity.hpp"
+
+#include <set>
+
+class System {
+public:
+    virtual ~System() = default;
+
+    std::set<Entity> entities;
+
+private:
+};
+
+#endif // !SYSTEM_HPP

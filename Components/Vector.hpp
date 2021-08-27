@@ -1,0 +1,21 @@
+///////////////////////////////////////////////////////////////////////////////
+// Vector.hpp
+///////////////////////////////////////////////////////////////////////////////
+
+#pragma once
+#ifndef VECTOR_HPP
+#define VECTOR_HPP
+
+struct Vector {
+	constexpr Vector(float x, float y)
+		: x{ x }
+		, y{ y }
+	{}
+
+	constexpr Vector() : Vector{ 0.0f, 0.0f } {}
+
+	float x;
+	float y;
+};
+
+#endif // !VECTOR_HPP
